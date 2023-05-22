@@ -702,7 +702,9 @@ class Edge(ChromiumBased):
             'linux_cookies': _genarate_nix_paths_chromium(
                 [
                     '~/.config/microsoft-edge{channel}/Default/Cookies',
-                    '~/.config/microsoft-edge{channel}/Profile */Cookies'
+                    '~/.config/microsoft-edge{channel}/Profile */Cookies',
+                    "~/.var/app/com.microsoft.Edge/config/microsoft-edge{channel}/Default/Cookies",
+                    "~/.var/app/com.microsoft.Edge/config/microsoft-edge{channel}/Profile */Cookies",
                 ],
                 channel=['', '-beta', '-dev']
             ),
